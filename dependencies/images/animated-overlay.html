@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>404 Page Not Found</title>
+
+	<style>
+	@font-face{font-family:Futura-Light;src:url(https://www.motorhub.co.ke/assets/fonts/2167e76f00e569cc11b3665679996380.eot);src:url(https://www.motorhub.co.ke/assets/fonts/2167e76f00e569cc11b3665679996380.eot?#iefix) format("embedded-opentype"),url(https://www.motorhub.co.ke/assets/fonts/2167e76f00e569cc11b3665679996380.woff2) format("woff2"),url(https://www.motorhub.co.ke/assets/fonts/2167e76f00e569cc11b3665679996380.woff) format("woff"),url(https://www.motorhub.co.ke/assets/fonts/2167e76f00e569cc11b3665679996380.ttf) format("truetype"),url(https://www.motorhub.co.ke/assets/fonts/2167e76f00e569cc11b3665679996380.svg#Futura-Light) format("svg");font-display:swap}@font-face{font-family:Conv_Futura-Heavy-BT_19003;src:url(https://www.motorhub.co.ke/assets/fonts/Futura-Heavy-BT_19003.eot);src:local('â˜º'),url(https://www.motorhub.co.ke/assets/fonts/Futura-Heavy-BT_19003.woff) format('woff'),url(https://www.motorhub.co.ke/assets/fonts/Futura-Heavy-BT_19003.ttf) format('truetype'),url(https://www.motorhub.co.ke/assets/fonts/Futura-Heavy-BT_19003.svg) format('svg');font-weight:400;font-style:normal;font-display:swap}
+	body{background:#da444d}.page-not-wrapper{text-align:center;position:relative;clear:both;display:table;height:76vh;width:100%}.page-not-wrapper h1{font-size:136px;font-family:Conv_Futura-Heavy-BT_19003;color:#fff;margin:0;padding:0;line-height:130px}.page-not-wrapper h2{font-size:32px;font-family:Futura-Light;color:#fff;margin:0;padding:0}.page-not-wrapper p{font-size:18px;font-family:Futura-Light;margin:0;padding:0;line-height:30px;color:#fff}.page-not-wrapper p a{font-weight:bold;text-decoration:none;color:#fff;font-family:Conv_Futura-Heavy-BT_19003;}.page-not-content{display:table-cell;height:76vh;vertical-align:middle;padding:0 20px}#totopscroller{display:none}@media screen and (max-width:767px){.page-not-wrapper h1{font-size:68px;line-height:65px}.page-not-wrapper h2{font-size:20px;line-height:18px}.page-not-wrapper p{line-height:18px;font-size:16px;color:#fff}
+</style>
+</head>
+<body>
+	
+<div class="page-not-wrapper">
+<div class="page-not-content">
+<h1>404</h1>
+<h2>WE ARE SORRY</h2>
+<p>Sorry, the page you're looking for doesn't exist any more.</p>
+<p>We shall redirect you automatically to our <a href="https://www.motorhub.co.ke">HOME PAGE.</a></p>
+<p id="delayMsg"></p>
+</div>
+</div>
+<script type="text/javascript">
+delayRedirect();
+function delayRedirect(){
+    document.getElementById('delayMsg').innerHTML = 'Please wait you\'ll be redirected after <span id="countDown">5</span> seconds....';
+    var count = 5;
+    setInterval(function(){
+        count--;
+if(count>=0)
+  {
+        document.getElementById('countDown').innerHTML = count;
+ }
+        if (count == 0) {
+            window.location = 'https://www.motorhub.co.ke'; 
+        }
+    },2000);
+}
+</script>
+</body>
+</html>
